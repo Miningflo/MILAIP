@@ -88,5 +88,41 @@
     "separation": 16,
     "direction": "L",
     "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "KIM SHORT",
+    "altitude": [
+      270,
+      300
+    ],
+    "base": 290,
+    "anchor": [
+      54.104333,
+      9.732
+    ],
+    "course": 30,
+    "length": 50,
+    "separation": 16,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "LILLY",
+    "altitude": [
+      90,
+      230
+    ],
+    "base": -1,
+    "anchor": [
+      53.662833,
+      8.7535
+    ],
+    "course": 65,
+    "length": 30,
+    "separation": 14,
+    "direction": "L",
+    "color": "blue"
   }
 ]
