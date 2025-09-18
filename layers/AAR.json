@@ -1,0 +1,92 @@
+[
+  {
+    "type": "racetrack",
+    "name": "JOJO",
+    "altitude": [
+      270,
+      300
+    ],
+    "base": 290,
+    "anchor": [
+      51.664167,
+      6.606333
+    ],
+    "course": 346,
+    "length": 30,
+    "separation": 12,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "ANGIE",
+    "altitude": [
+      200,
+      230
+    ],
+    "base": 210,
+    "anchor": [
+      48.524833,
+      8.363167
+    ],
+    "course": 17,
+    "length": 30,
+    "separation": 14,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "GRETCHEN",
+    "altitude": [
+      270,
+      300
+    ],
+    "base": 290,
+    "anchor": [
+      48.0665,
+      10.366167
+    ],
+    "course": 137,
+    "length": 30,
+    "separation": 16,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "GRETCHEN LOW",
+    "altitude": [
+      110,
+      150
+    ],
+    "base": 130,
+    "anchor": [
+      48.327667,
+      10.6233333
+    ],
+    "course": 53,
+    "length": 35,
+    "separation": 10,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "KIM LONG",
+    "altitude": [
+      270,
+      300
+    ],
+    "base": 290,
+    "anchor": [
+      54.103,
+      9.730167
+    ],
+    "course": 30,
+    "length": 112,
+    "separation": 16,
+    "direction": "L",
+    "color": "blue"
+  }
+]

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.3.1/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.3.1/ol.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module">
+        import init from "./init.js"
+        import createLayer from "./script.js";
+
+        window.onload = () => {
+            const map = init()
+
+            fetch("./layers/layers.json").then(res => res.json()).then(layers => {
+                let layerbox = document.getElementById("layers");
+                let layerlist = {};
+                layers.forEach(layer => {
+                    createLayer(map, layer, layerlist);
+                    let inp = document.createElement("input")
+                    inp.type = "checkbox"
+                    inp.id = layer
+                    inp.onchange = () => {
+                        if (inp.checked) {
+                            console.log(layerlist)
+                            map.addLayer(layerlist[layer]);
+                        } else {
+                            map.removeLayer(layerlist[layer]);
+                        }
+                    };
+                    let div = document.createElement('div');
+                    div.textContent = layer + ' '; // label text
+                    div.appendChild(inp);          // append the checkbox
+                    layerbox.appendChild(div);     // add to container
+                })
+            })
+        }
+    </script>
+</head>
+<body>
+<div id="map"></div>
+<div id="layers"></div>
+
+</body>
+</html>
