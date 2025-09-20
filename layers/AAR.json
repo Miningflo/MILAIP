@@ -1,5 +1,4 @@
 [
-
   {
     "type": "racetrack",
     "name": "ANGIE",
@@ -199,6 +198,96 @@
     "color": "blue"
   },
   {
+    "type": "racetrack",
+    "name": "VIRGIN",
+    "altitude": [
+      26000,
+      66000
+    ],
+    "base": 28000,
+    "anchor": [
+      49.323167,
+      7.888833
+    ],
+    "course": 101,
+    "length": 40,
+    "separation": 18,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "JANIN",
+    "altitude": [
+      10000,
+      35000
+    ],
+    "base": -1,
+    "anchor": [
+      54.087,
+      12.900667
+    ],
+    "course": 13,
+    "length": 50,
+    "separation": 16,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "TINA",
+    "altitude": [
+      10000,
+      35000
+    ],
+    "base": -1,
+    "anchor": [
+      53.814,
+      13.5415
+    ],
+    "course": 11,
+    "length": 35,
+    "separation": 14,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "MERLE",
+    "altitude": [
+      16000,
+      22000
+    ],
+    "base": -1,
+    "anchor": [
+      53.954833,
+      12.026667
+    ],
+    "course": 12,
+    "length": 25,
+    "separation": 12,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "NELE",
+    "altitude": [
+      23000,
+      27000
+    ],
+    "base": -1,
+    "anchor": [
+      54.3235,
+      13.5705
+    ],
+    "course": 104,
+    "length": 22,
+    "separation": 10,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
     "type": "racetrack2",
     "name": "LENA",
     "altitude": [
@@ -206,7 +295,16 @@
       32000
     ],
     "base": 30000,
-    "anchors": [[51.388167,5.903167],[51.859833,5.503833]],
+    "anchors": [
+      [
+        51.388167,
+        5.903167
+      ],
+      [
+        51.859833,
+        5.503833
+      ]
+    ],
     "course": 129,
     "direction": "L",
     "color": "blue"
