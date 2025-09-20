@@ -59,6 +59,12 @@ export default function createLayer(map, layer, layerlist) {
                 const olCoords = item.points.map(c => ol.proj.fromLonLat(c.reverse()));
                 geometry = new ol.geom.Polygon([olCoords])
                 name = getname(item.name, item.altitude ?? [-1, -1])
+            }else if(item.type === "circle"){
+                let center = ol.proj.fromLonLat(item.center.reverse())
+                let radius = item.radius * 1852
+                var circle = new ol.geom.Circle(center, radius / ol.proj.getPointResolution('EPSG:3857', 1, center))
+                geometry = ol.geom.Polygon.fromCircle(circle, 100, 90)
+                name = getname(item.name, item.altitude ?? [-1, -1])
             }else {
                 geometry = new ol.geom.Point(ol.proj.fromLonLat(item.location.reverse()))
                 name = item.name

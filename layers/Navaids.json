@@ -23,6 +23,36 @@
   "type": "TACAN",
   "name": "KOK\n92X",
   "location": [51.092833, 2.653333]
-}
+  },
+  {
+    "type": "TACAN",
+    "name": "DLN\n59X",
+    "location": [52.057222, 5.8725]
+  },
+  {
+    "type": "TACAN",
+    "name": "EHV\n119X",
+    "location": [51.448056, 5.375]
+  },
+  {
+    "type": "TACAN",
+    "name": "GZR\n111X",
+    "location": [51.566111, 4.933611]
+  },
+  {
+    "type": "TACAN",
+    "name": "LWD\n94X",
+    "location": [53.223611, 5.751944]
+  },
+  {
+    "type": "TACAN",
+    "name": "VKL\n20X",
+    "location": [51.655556, 5.706944]
+  },
+  {
+    "type": "TACAN",
+    "name": "WDT\n97X",
+    "location": [51.4475, 4.343889]
+  }
 
 ]

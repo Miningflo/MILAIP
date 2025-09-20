@@ -1,1 +1,61 @@
-[]
+[
+  {
+    "type": "circle",
+    "name": "L1",
+    "center": [53.8, 5.616667],
+    "radius": 15,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "L2",
+    "center": [54.05, 4.7],
+    "radius": 15,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "L3",
+    "center": [54.683333, 5.233333],
+    "radius": 15,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "airspace",
+    "name": "NL1",
+    "color": "cornflowerblue",
+    "points": [
+      [53.5, 4.583333],
+      [54.066667, 4.2],
+      [55, 5],
+      [55, 5.566667],
+      [53.616667, 6.166667],
+      [53.5, 5.55]
+    ]
+  },
+  {
+    "type": "circle",
+    "name": "L1",
+    "center": [51.833333, 5.5],
+    "radius": 15,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "L2",
+    "center": [51.3, 5.45],
+    "radius": 12,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "airspace",
+    "name": "NL2",
+    "color": "cornflowerblue",
+    "points": [
+      [50.916667, 5],
+      [52.166667, 5],
+      [52.083333, 6],
+      [51.08, 5.872222]
+    ]
+  }
+]

@@ -342,6 +342,42 @@
     "color": "blue"
   },
   {
+    "type": "racetrack",
+    "name": "CAROL LONG",
+    "altitude": [26000, 29000],
+    "base": 28000,
+    "anchor": [53.2735, 5.824167],
+    "course": 86,
+    "length": 60,
+    "separation": 12,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "CAROL SHORT",
+    "altitude": [26000, 29000],
+    "base": 28000,
+    "anchor": [53.2735, 5.824167],
+    "course": 86,
+    "length": 30,
+    "separation": 12,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "POLLY",
+    "altitude": [26000, 29000],
+    "base": 28000,
+    "anchor": [53.219167, 5.718333],
+    "course": 60,
+    "length": 30,
+    "separation": 12,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
     "type": "racetrack2",
     "name": "LENA",
     "altitude": [

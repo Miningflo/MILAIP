@@ -70,5 +70,48 @@
     "radius": 5,
     "altitude": [0,2500],
     "color": "purple"
+  },
+  {
+    "type": "airfield",
+    "name": "EHDL",
+    "location": [52.059728, 5.871936]
+  },
+  {
+    "type": "airfield",
+    "name": "EHDP",
+    "location": [51.517033, 5.853383]
+  },
+  {
+    "type": "airfield",
+    "name": "EHEH",
+    "location": [51.450133, 5.374514]
+  },
+  {
+    "type": "racetrack3",
+    "name": "EHEH/EHVK CTR",
+    "centers": [[51.45, 5.371333],[51.657208, 5.707825]],
+    "radius": 8,
+    "altitude": [0,3000],
+    "color": "purple"
+  },
+  {
+    "type": "airfield",
+    "name": "EHGR",
+    "location": [51.567378, 4.931836]
+  },
+  {
+    "type": "airfield",
+    "name": "EHVK",
+    "location": [51.657208, 5.707825]
+  },
+  {
+    "type": "airfield",
+    "name": "EHSB",
+    "location": [52.134041, 5.265498]
+  },
+  {
+    "type": "airfield",
+    "name": "EHTW",
+    "location": [52.272167, 6.886833]
   }
 ]
