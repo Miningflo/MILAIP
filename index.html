@@ -23,7 +23,6 @@
                     inp.id = layer
                     inp.onchange = () => {
                         if (inp.checked) {
-                            console.log(layerlist)
                             map.addLayer(layerlist[layer]);
                         } else {
                             map.removeLayer(layerlist[layer]);

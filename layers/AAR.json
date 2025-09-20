@@ -1,30 +1,13 @@
 [
-  {
-    "type": "racetrack",
-    "name": "JOJO",
-    "altitude": [
-      270,
-      300
-    ],
-    "base": 290,
-    "anchor": [
-      51.664167,
-      6.606333
-    ],
-    "course": 346,
-    "length": 30,
-    "separation": 12,
-    "direction": "L",
-    "color": "blue"
-  },
+
   {
     "type": "racetrack",
     "name": "ANGIE",
     "altitude": [
-      200,
-      230
+      20000,
+      23000
     ],
-    "base": 210,
+    "base": 21000,
     "anchor": [
       48.524833,
       8.363167
@@ -39,10 +22,10 @@
     "type": "racetrack",
     "name": "GRETCHEN",
     "altitude": [
-      270,
-      300
+      27000,
+      30000
     ],
-    "base": 290,
+    "base": 29000,
     "anchor": [
       48.0665,
       10.366167
@@ -57,10 +40,10 @@
     "type": "racetrack",
     "name": "GRETCHEN LOW",
     "altitude": [
-      110,
-      150
+      11000,
+      15000
     ],
-    "base": 130,
+    "base": 13000,
     "anchor": [
       48.327667,
       10.6233333
@@ -73,12 +56,30 @@
   },
   {
     "type": "racetrack",
+    "name": "JOJO",
+    "altitude": [
+      27000,
+      30000
+    ],
+    "base": 29000,
+    "anchor": [
+      51.664167,
+      6.606333
+    ],
+    "course": 346,
+    "length": 30,
+    "separation": 12,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
     "name": "KIM LONG",
     "altitude": [
-      270,
-      300
+      27000,
+      30000
     ],
-    "base": 290,
+    "base": 29000,
     "anchor": [
       54.103,
       9.730167
@@ -93,10 +94,10 @@
     "type": "racetrack",
     "name": "KIM SHORT",
     "altitude": [
-      270,
-      300
+      27000,
+      30000
     ],
-    "base": 290,
+    "base": 29000,
     "anchor": [
       54.104333,
       9.732
@@ -122,6 +123,91 @@
     "course": 65,
     "length": 30,
     "separation": 14,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "NORTHSEA",
+    "altitude": [
+      7000,
+      30000
+    ],
+    "base": -1,
+    "anchor": [
+      54.7285,
+      7.300833
+    ],
+    "course": 7,
+    "length": 34,
+    "separation": 14,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "SANDRA",
+    "altitude": [
+      9000,
+      30000
+    ],
+    "base": -1,
+    "anchor": [
+      52.872333,
+      8.363
+    ],
+    "course": 42,
+    "length": 33,
+    "separation": 12,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "SAXON",
+    "altitude": [
+      14000,
+      19000
+    ],
+    "base": 16000,
+    "anchor": [
+      50.983167,
+      12.789167
+    ],
+    "course": 31,
+    "length": 25,
+    "separation": 10,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "LUCA",
+    "altitude": [
+      13000,
+      23000
+    ],
+    "base": -1,
+    "anchor": [
+      49.644167,
+      7.944
+    ],
+    "course": 333,
+    "length": 26,
+    "separation": 10,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack2",
+    "name": "LENA",
+    "altitude": [
+      27000,
+      32000
+    ],
+    "base": 30000,
+    "anchors": [[51.388167,5.903167],[51.859833,5.503833]],
+    "course": 129,
     "direction": "L",
     "color": "blue"
   }

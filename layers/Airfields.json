@@ -1,1 +1,15 @@
-
+[
+  {
+    "type": "airfield",
+    "name": "EBBL",
+    "location": [51.167667, 5.468667]
+  },
+  {
+    "type": "racetrack3",
+    "name": "EBBL CTR",
+    "centers": [[51.074167, 5.3045],[51.236833, 5.608333]],
+    "radius": 5,
+    "altitude": [0,2500],
+    "color": "purple"
+  }
+]

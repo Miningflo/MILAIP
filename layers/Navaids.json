@@ -1,1 +1,28 @@
+[
+  {
+    "type": "TACAN",
+    "name": "BBL\n33X",
+    "location": [51.1673, 5.4693]
+  },
+  {
+    "type": "TACAN",
+    "name": "BBE\n107X",
+    "location": [50.754167, 4.767833]
+  },
+  {
+    "type": "TACAN",
+    "name": "BFS\n52X",
+    "location": [50.238167, 4.652]
+  },
+  {
+    "type": "TACAN",
+    "name": "CIV\n79X",
+    "location": [50.57, 3.8196]
+  },
+  {
+  "type": "TACAN",
+  "name": "KOK\n92X",
+  "location": [51.092833, 2.653333]
+}
 
+]
