@@ -288,6 +288,60 @@
     "color": "blue"
   },
   {
+    "type": "racetrack",
+    "name": "GISELE",
+    "altitude": [
+      19500,
+      66000
+    ],
+    "base": 23000,
+    "anchor": [
+      48.709,
+      4.925333
+    ],
+    "course": 247,
+    "length": 48,
+    "separation": 14,
+    "direction": "R",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "MARIE",
+    "altitude": [
+      20000,
+      28500
+    ],
+    "base": 23000,
+    "anchor": [
+      48.1,
+      7.5
+    ],
+    "course": 180,
+    "length": 48,
+    "separation": 14,
+    "direction": "R",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack",
+    "name": "REGINA",
+    "altitude": [
+      11500,
+      19500
+    ],
+    "base": 15000,
+    "anchor": [
+      49,
+      5.666667
+    ],
+    "course": 90,
+    "length": 30,
+    "separation": 14,
+    "direction": "R",
+    "color": "blue"
+  },
+  {
     "type": "racetrack2",
     "name": "LENA",
     "altitude": [

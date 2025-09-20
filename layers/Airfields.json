@@ -11,5 +11,64 @@
     "radius": 5,
     "altitude": [0,2500],
     "color": "purple"
+  },
+  {
+    "type": "airfield",
+    "name": "EBBE",
+    "location": [50.754667, 4.766833]
+  },
+  {
+    "type": "airspace",
+    "name": "EBBE CTR",
+    "color": "purple",
+    "altitude": [0,2500],
+    "points": [
+      [50.691833, 4.502667],
+      [50.953, 4.866833],
+      [50.892667, 5.04],
+      [50.806, 5.154167],
+      [50.692833, 4.920833],
+      [50.656833, 4.825833],
+      [50.583667, 4.708],
+      [50.691933, 4.502667]
+    ]
+  },
+  {
+    "type": "airfield",
+    "name": "EBST",
+    "location": [50.7885, 5.201]
+  },
+  {
+    "type": "airfield",
+    "name": "EBTN",
+    "location": [50.775667, 4.954667]
+  },
+  {
+    "type": "airfield",
+    "name": "EBBX",
+    "location": [49.888333, 5.221]
+  },
+  {
+    "type": "airfield",
+    "name": "EBWE",
+    "location": [51.389833, 4.9555]
+  },
+  {
+    "type": "airfield",
+    "name": "EBSL",
+    "location": [50.941833, 5.587667]
+  },
+  {
+    "type": "airfield",
+    "name": "EBLG",
+    "location": [50.635167, 5.439]
+  },
+  {
+    "type": "racetrack3",
+    "name": "EBLG CTR",
+    "centers": [[50.6895, 5.534167],[50.5745, 5.351667]],
+    "radius": 5,
+    "altitude": [0,2500],
+    "color": "purple"
   }
 ]
