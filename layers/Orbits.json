@@ -57,5 +57,215 @@
       [52.083333, 6],
       [51.08, 5.872222]
     ]
+  },
+  {
+    "type": "airspace",
+    "name": "NG1",
+    "color": "cornflowerblue",
+    "points": [
+      [53.916667, 6.666667],
+      [53.916667, 7.333333],
+      [54.916667, 8],
+      [54.916667, 6.666667]
+    ]
+  },
+  {
+    "type": "airspace",
+    "name": "NG2",
+    "color": "cornflowerblue",
+    "points": [
+      [54.6, 9.716667],
+      [54.266667, 10.533333],
+      [53.716667, 9.383333],
+      [53.5, 9.333333],
+      [53.283333, 7.2]
+    ]
+  },
+  {
+    "type": "airspace",
+    "name": "NG3",
+    "color": "cornflowerblue",
+    "points": [
+      [53.516667, 11],
+      [52.6, 11],
+      [52.583333, 9.133333],
+      [53.5333333, 10.633333]
+    ]
+  },
+  {
+    "type": "airspace",
+    "name": "NG4",
+    "color": "cornflowerblue",
+    "points": [
+      [49, 8.166667],
+      [49, 9.183333],
+      [48.633333, 9.05],
+      [47.833333, 8.35],
+      [47.9, 7.566667]
+    ]
+  },
+  {
+    "type": "airspace",
+    "name": "NG6",
+    "color": "cornflowerblue",
+    "points": [
+      [51.316667, 12.516667],
+      [50.983333, 13.383333],
+      [50.683333, 12.95],
+      [50.433333, 12.116667],
+      [50.5, 11.916667]
+    ]
+  },
+  {
+    "type": "airspace",
+    "name": "NG7",
+    "color": "cornflowerblue",
+    "points": [
+      [50.289167, 10.252667],
+      [49.816667, 9.851333],
+      [50.141167, 8.901167],
+      [50.537, 9.135],
+      [50.6405, 9.49]
+    ]
+  },
+  {
+    "type": "circle",
+    "name": "NG11",
+    "center": [54.133333, 7.033333],
+    "radius": 12,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG12",
+    "center": [54.7, 7.033333],
+    "radius": 12,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG13",
+    "center": [54.7, 7.416667],
+    "radius": 12,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG14",
+    "center": [54.583333, 7.183333],
+    "radius": 16,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG21",
+    "center": [54.25, 9.766667],
+    "radius": 15,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG22",
+    "center": [53.716667, 8.733333],
+    "radius": 14,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG23",
+    "center": [53.616667, 8.366667],
+    "radius": 12,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG31",
+    "center": [52.91, 10.45],
+    "radius": 18,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG32",
+    "center": [53.158333, 10.633333],
+    "radius": 12,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG33",
+    "center": [52.81, 9.983333],
+    "radius": 12,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG41",
+    "center": [48.733333, 8.516667],
+    "radius": 14,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG42",
+    "center": [48.173333, 8.166667],
+    "radius": 15,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG61",
+    "center": [50.891667, 12.65],
+    "radius": 14,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG71",
+    "center": [50.233333, 9.6],
+    "radius": 15,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG81",
+    "center": [54.616667, 13.366667],
+    "radius": 14,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG82",
+    "center": [54.666667, 13.366667],
+    "radius": 11,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG83",
+    "center": [54.416667, 12.608333],
+    "radius": 11,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG84",
+    "center": [53.216667, 14.0],
+    "radius": 11,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "circle",
+    "name": "NG85",
+    "center": [52.766667, 13.633333],
+    "radius": 14,
+    "color": "cornflowerblue"
+  },
+  {
+    "type": "racetrack3",
+    "name": "NG86",
+    "centers": [[54.666667, 13.366667], [54.416667, 12.608333]],
+    "radius": 11,
+    "color": "cornflowerblue"
   }
 ]

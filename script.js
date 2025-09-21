@@ -1,3 +1,5 @@
+//TODO: add DK AAR, PARIS FIR, REIMS FIR, CZ FIR, AAR airspace for GER
+
 import {racetrack, racetrack2, racetrack3} from './utils/racetrack.js';
 
 function altitudename(limit) {
@@ -38,7 +40,7 @@ export default function createLayer(map, layer, layerlist) {
                 const olCoords = rtpoints.map(c => ol.proj.fromLonLat(c.reverse()));
                 geometry = new ol.geom.Polygon([olCoords])
                 rotation = (item.course + (item.course < 180 ? -90 : 90)) / 180 * Math.PI
-                name = getname(item.name, item.altitude, "\n")
+                name = getname(item.name, item.altitude ?? [-1, -1], "\n")
 
 
                 if(layer === "AAR"){
