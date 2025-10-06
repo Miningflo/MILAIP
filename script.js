@@ -1,6 +1,6 @@
 //TODO: add DK AAR, PARIS FIR, REIMS FIR, CZ FIR, AAR airspace for GER
 
-import {racetrack, racetrack2, racetrack3} from './utils/racetrack.js';
+import {racetrack, racetrack2, racetrack3, racetrack4} from './utils/racetrack.js';
 
 function altitudename(limit) {
     if (limit === -1) return ""
@@ -29,10 +29,12 @@ export default function createLayer(map, layer, layerlist) {
 
             if (item.type.includes("racetrack")) {
                 let rtpoints = []
-                if (item.type === "racetrack") {
+                if (item.type === "racetrack") { // anchor, course, length, separation and direction
                     rtpoints = racetrack(item.anchor, item.course, item.length, item.separation, item.direction)
-                }else if (item.type === "racetrack2") {
+                }else if (item.type === "racetrack2") { // anchors opposite, course, direction
                     rtpoints = racetrack2(item.anchors, item.course, item.direction)
+                }else if(item.type === "racetrack4"){ // anchors on the same leg, direction
+                    rtpoints = racetrack4(item.anchors, 10, item.direction)
                 }else{
                     rtpoints = racetrack3(item.centers, item.radius)
                 }

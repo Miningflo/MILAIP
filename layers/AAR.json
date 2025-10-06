@@ -398,5 +398,115 @@
     "course": 129,
     "direction": "L",
     "color": "blue"
+  },
+  {
+    "type": "racetrack4",
+    "name": "RANDI",
+    "altitude": [
+      15000,
+      24000
+    ],
+    "base": -1,
+    "anchors": [
+      [
+        57,
+        9
+      ],
+      [
+        57.416667,
+        10.16667
+      ]
+    ],
+    "course": 235,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack4",
+    "name": "ROBIN",
+    "altitude": [
+      18000,
+      28000
+    ],
+    "base": -1,
+    "anchors": [
+      [
+        56.8,
+        5.583333
+      ],
+      [
+        56.8,
+        7
+      ]
+    ],
+    "course": 270,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack4",
+    "name": "SARAH",
+    "altitude": [
+      15000,
+      24000
+    ],
+    "base": -1,
+    "anchors": [
+      [
+        55.333333,
+        8.75
+      ],
+      [
+        55.333333,
+        9.75
+      ]
+    ],
+    "course": 270,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack4",
+    "name": "SOFIA",
+    "altitude": [
+      18000,
+      28000
+    ],
+    "base": -1,
+    "anchors": [
+      [
+        56.2,
+        5.916667
+      ],
+      [
+        56.833333,
+        5.916667
+      ]
+    ],
+    "course": 180,
+    "direction": "L",
+    "color": "blue"
+  },
+  {
+    "type": "racetrack4",
+    "name": "STORK",
+    "altitude": [
+      18000,
+      28000
+    ],
+    "base": -1,
+    "anchors": [
+      [
+        55.133333,
+        7.3
+      ],
+      [
+        55.133333,
+        6.133333
+      ]
+    ],
+    "course": 90,
+    "direction": "L",
+    "color": "blue"
   }
 ]

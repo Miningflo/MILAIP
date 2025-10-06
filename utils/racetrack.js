@@ -38,19 +38,29 @@ function haversine(A, B) { // distance between 2 points
     return 2 * R * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
-function bearing(a, b) { // degrees from true north
-    const φ1 = deg2rad(a[0]), φ2 = deg2rad(b[0]);
+// function bearing(a, b) { // degrees from true north
+//     const φ1 = deg2rad(a[0]), φ2 = deg2rad(b[0]);
+//     const Δλ = deg2rad(b[1] - a[1]);
+//     const y = Math.sin(Δλ) * Math.cos(φ2);
+//     const x = Math.cos(φ1) * Math.sin(φ2) - Math.sin(φ1) * Math.cos(φ2) * Math.cos(Δλ);
+//     return (rad2deg(Math.atan2(y, x)) + 360) % 360;
+// }
+
+function rhumbBearing(a, b) {
+    const φ1 = deg2rad(a[0]);
+    const φ2 = deg2rad(b[0]);
     const Δλ = deg2rad(b[1] - a[1]);
-    const y = Math.sin(Δλ) * Math.cos(φ2);
-    const x = Math.cos(φ1) * Math.sin(φ2) - Math.sin(φ1) * Math.cos(φ2) * Math.cos(Δλ);
-    return (rad2deg(Math.atan2(y, x)) + 360) % 360;
+    const Δψ = Math.log(Math.tan(Math.PI/4 + φ2/2) / Math.tan(Math.PI/4 + φ1/2));
+    const θ = Math.atan2(Δλ, Δψ);
+    return (rad2deg(θ) + 360) % 360;
 }
+
 
 
 export function racetrack2([A, B], course, direction) {
 
     const d = haversine(A, B);          // diagonal distance in meters
-    const θab = bearing(A, B);          // direction from A→B
+    const θab = rhumbBearing(A, B);          // direction from A→B
     const diffRad = deg2rad(((θab - course + 540) % 360) - 180); // [-180,180]
 
     const longSide = Math.abs(d * Math.cos(diffRad));   // along the course
@@ -95,10 +105,17 @@ export function racetrack(anchor, course, length, separation, direction) {
 
 export function racetrack3([center1, center2], radius) {
     let distance = haversine(center1, center2) / 1852
-    let course = bearing(center1, center2)
+    let course = rhumbBearing(center1, center2)
     let anchor = destinationPoint(center2, radius * 1852, angle(course + 90))
 
     return racetrack(anchor, course, distance, 2 * radius, "L")
+}
+
+export function racetrack4([anchor1, anchor2], separation, direction) {
+    let distance = haversine(anchor1, anchor2) / 1852
+    let course = rhumbBearing(anchor2, anchor1)
+
+    return racetrack(anchor1, course, distance, separation, direction)
 }
 
 
