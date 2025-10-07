@@ -1,4 +1,4 @@
-//TODO: add DK AAR, PARIS FIR, REIMS FIR, CZ FIR, AAR airspace for GER
+//TODO: PARIS FIR, REIMS FIR, CZ FIR, AAR airspace for GER
 
 import {racetrack, racetrack2, racetrack3, racetrack4} from './utils/racetrack.js';
 
@@ -22,13 +22,13 @@ export default function createLayer(map, layer, layerlist) {
         data.forEach(item => {
             let geometry
             let rotation = 0
-            let name = ""
-            let icon = ""
+            let name
+            let icon
 
 
 
             if (item.type.includes("racetrack")) {
-                let rtpoints = []
+                let rtpoints
                 if (item.type === "racetrack") { // anchor, course, length, separation and direction
                     rtpoints = racetrack(item.anchor, item.course, item.length, item.separation, item.direction)
                 }else if (item.type === "racetrack2") { // anchors opposite, course, direction
@@ -82,10 +82,10 @@ export default function createLayer(map, layer, layerlist) {
             const itemfeature = new ol.Feature({
                 geometry: geometry,
                 "color": item.color,
-                "name": name,
+                "name": name || "",
                 "type": item.type,
                 "rotation": rotation,
-                "icon": icon,
+                "icon": icon || "",
             });
 
             features.push(itemfeature);

@@ -19,5 +19,31 @@
     "type": "RNAV",
     "name": "UDRUR",
     "location": [50.4158, 5.0820]
+  },
+  {
+    "type": "line",
+    "name": "LIEGE",
+    "color": "magenta",
+    "points": [[50.790667, 5.475833], [50.483667, 5.490667], [50.168167, 5.501667]]
+  },
+  {
+    "type": "RNAV",
+    "name": "ULTAV",
+    "location": [50.790667, 5.475833]
+  },
+  {
+    "type": "RNAV",
+    "name": "CERHU",
+    "location": [50.483667, 5.490667]
+  },
+  {
+    "type": "RNAV",
+    "name": "FAGVE",
+    "location": [50.168167, 5.501667]
+  },
+  {
+    "type": "RNAV",
+    "name": "UNLUP",
+    "location": [50.282333, 5.491333]
   }
 ]
