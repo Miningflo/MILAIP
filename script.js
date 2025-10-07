@@ -69,6 +69,10 @@ export default function createLayer(map, layer, layerlist) {
                 var circle = new ol.geom.Circle(center, radius / ol.proj.getPointResolution('EPSG:3857', 1, center))
                 geometry = ol.geom.Polygon.fromCircle(circle, 100, 90)
                 name = getname(item.name, item.altitude ?? [-1, -1])
+            }else if(item.type === "line") {
+                const olCoords = item.points.map(c => ol.proj.fromLonLat(c.reverse()));
+                geometry = new ol.geom.LineString(olCoords)
+                name = item.name
             }else {
                 geometry = new ol.geom.Point(ol.proj.fromLonLat(item.location.reverse()))
                 name = item.name
@@ -111,9 +115,11 @@ export default function createLayer(map, layer, layerlist) {
                         }),
                         text: map.getView().getZoom() >= 7 ? feature.get('name') : "",
                         textAlign: 'center',
-                        placement: feature.get("type").includes('racetrack3') ? 'line' : 'point',
+                        // placement: feature.get("type").includes('racetrack3') ? 'line' : 'point',
+                        placement: ["racetrack3", "line"].includes(feature.get("type")) ? 'line' : 'point',
                         rotation: feature.get("rotation"),
-                        textBaseline: feature.get("type").includes('racetrack3') ? 'top' : 'middle',
+                        // textBaseline: feature.get("type").includes('racetrack3') ? 'top' : 'middle',
+                        textBaseline: ["racetrack3", "line"].includes(feature.get("type")) ? 'top' : 'middle',
                         keepUpright: true,
                         offsetY: feature.get("icon").length > 0 ? 15 : 0
 

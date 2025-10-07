@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "type": "line",
+    "name": "REMBA",
+    "color": "magenta",
+    "points": [[51.0511, 5.0475], [50.6227, 4.8406], [50.4158, 5.0820]]
+  },
+  {
+    "type": "RNAV",
+    "name": "ERPUD",
+    "location": [51.0511, 5.0475]
+  },
+  {
+    "type": "RNAV",
+    "name": "DOCAW",
+    "location": [50.6227, 4.8406]
+  },
+  {
+    "type": "RNAV",
+    "name": "UDRUR",
+    "location": [50.4158, 5.0820]
+  }
+]
