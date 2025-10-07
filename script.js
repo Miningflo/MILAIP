@@ -34,7 +34,7 @@ export default function createLayer(map, layer, layerlist) {
                 }else if (item.type === "racetrack2") { // anchors opposite, course, direction
                     rtpoints = racetrack2(item.anchors, item.course, item.direction)
                 }else if(item.type === "racetrack4"){ // anchors on the same leg, direction
-                    rtpoints = racetrack4(item.anchors, 10, item.direction)
+                    rtpoints = racetrack4(item.anchors, item.separation || 5, item.direction)
                 }else{
                     rtpoints = racetrack3(item.centers, item.radius)
                 }
@@ -103,7 +103,7 @@ export default function createLayer(map, layer, layerlist) {
                     text: new ol.style.Text({
                         font: 'bold ' + (feature.get("icon").length > 0 ? 10 : 15) + 'px Arial, sans-serif',
                         stroke: new ol.style.Stroke({
-                            color: "white",
+                            color: feature.get("color") === "transparent" ? "transparent" : "white",
                             width: 0.9
                         }),
                         fill: new ol.style.Fill({
