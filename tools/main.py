@@ -1,64 +1,60 @@
-import re
 import json
+import re
+
 import pyperclip
 
-def parse_dms_token(tok):
-    tok = re.sub(r'[^0-9NSEWnsew]', '', tok).upper()
-    m = re.match(r'^(\d+)([NSEW])$', tok)
-    if not m:
-        raise ValueError(f"Invalid coordinate token: {tok}")
 
-    num, hemi = m.groups()
-    if len(num) < 4:
-        raise ValueError(f"Invalid numeric part in token: {tok}")
+def parse_coord(line):
+    line = line.strip().replace("°", "").replace("′", "").replace("’", "").replace("“", "").replace("”", "")
 
-    deg_digits = len(num) - 4
-    deg = int(num[:deg_digits])
-    minutes = int(num[deg_digits:deg_digits+2])
-    seconds = int(num[deg_digits+2:deg_digits+4])
+    # Try spaced format first: "57 14 28N 009 00 00E"
+    spaced = re.match(
+        r"(\d{1,2})\s+(\d{1,2})\s+(\d{0,2}(?:\.\d+)?)?([NS])\s+(\d{1,3})\s+(\d{1,2})\s+(\d{0,2}(?:\.\d+)?)?([EW])",
+        line
+    )
 
-    if not (0 <= minutes < 60 and 0 <= seconds < 60):
-        raise ValueError(f"Invalid minutes/seconds in token: {tok}")
+    # If not spaced, try compact format: "573858N 0102855E"
+    compact = re.match(
+        r"(\d{2})(\d{2})(\d{0,2}(?:\.\d+)?)([NS])\s+(\d{3})(\d{2})(\d{0,2}(?:\.\d+)?)([EW])",
+        line
+    )
 
-    dd = deg + minutes / 60.0 + seconds / 3600.0
-    if hemi in ('S', 'W'):
-        dd = -dd
+    match = spaced or compact
+    if not match:
+        raise ValueError(f"Invalid coordinate format: {line}")
 
-    return round(dd, 6)
+    lat_deg, lat_min, lat_sec, lat_dir, lon_deg, lon_min, lon_sec, lon_dir = match.groups()
 
-def parse_text_to_coords(text):
-    tokens = re.findall(r'\d+[NSEWnsew]', text)
-    tokens = [t.upper() for t in tokens]
+    lat_sec = float(lat_sec) if lat_sec else 0
+    lon_sec = float(lon_sec) if lon_sec else 0
 
-    if len(tokens) % 2 != 0:
-        raise ValueError("Odd number of coordinate tokens — expected pairs.")
+    lat = float(lat_deg) + float(lat_min)/60 + lat_sec/3600
+    lon = float(lon_deg) + float(lon_min)/60 + lon_sec/3600
 
-    coords = []
-    for i in range(0, len(tokens), 2):
-        lat_tok, lon_tok = tokens[i], tokens[i+1]
-        if lat_tok[-1] not in 'NS' or lon_tok[-1] not in 'EW':
-            if lat_tok[-1] in 'EW' and lon_tok[-1] in 'NS':
-                lat_tok, lon_tok = lon_tok, lat_tok
-            else:
-                raise ValueError(f"Unexpected token order: {lat_tok} {lon_tok}")
-        lat = parse_dms_token(lat_tok)
-        lon = parse_dms_token(lon_tok)
-        coords.append([lat, lon])
-    return coords
+    if lat_dir == "S":
+        lat = -lat
+    if lon_dir == "W":
+        lon = -lon
+
+    return [round(lat, 6), round(lon, 6)]
 
 def main():
-    print("Paste your coordinate list below, then press Ctrl+D:")
-    text = ""
-    while True:
-        try:
-            line = input()
-            text += line + "\n"
-        except EOFError:
-            break
+    print("Paste coordinates (any format), then press Ctrl+D (Linux/macOS) or Ctrl+Z (Windows):")
+    lines = []
+    try:
+        while True:
+            line = input().strip()
+            if line:
+                # Allow multiple coords per line separated by '-'
+                for part in re.split(r"\s*-\s*", line):
+                    if part:
+                        lines.append(part)
+    except EOFError:
+        pass
 
-    coords = parse_text_to_coords(text)
+    coords = [parse_coord(line) for line in lines]
     pyperclip.copy(json.dumps(coords))
-    print("owo it's on the clipboard")
+    print(json.dumps(coords))
 
 if __name__ == "__main__":
     main()
