@@ -7,8 +7,8 @@ export default function init() {
             })
         ],
         view: new ol.View({
-            center: ol.proj.fromLonLat([8.15, 56.18]), // Longitude, Latitude
-            zoom: 7.5
+            center: ol.proj.fromLonLat([5.4, 51.1]), // Longitude, Latitude
+            zoom: 11
         }),
         controls: ol.control.defaults.defaults().extend([
             new ol.control.ScaleLine({

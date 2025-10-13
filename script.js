@@ -45,7 +45,7 @@ export default function createLayer(map, layer, layerlist) {
                 name = getname(item.name, item.altitude ?? [-1, -1], "\n")
 
 
-                if(layer === "AAR"){
+                if(layer === "AAR" || item.arrow === true){
                     const arrowFeature = new ol.Feature({
                         geometry: new ol.geom.Point(olCoords[0]),
                         "color": item.color,

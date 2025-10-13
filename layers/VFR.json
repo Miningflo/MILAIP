@@ -1,7 +1,89 @@
 [
   {
     "type": "VFR",
+    "name": "RAUW",
+    "location": [51.238333, 5.187]
+  },
+  {
+    "type": "VFR",
     "name": "NORTH",
     "location": [51.2415, 5.412167]
+  },
+  {
+    "type": "VFR",
+    "name": "EAST",
+    "location": [51.1715, 5.690333]
+  },
+  {
+    "type": "VFR",
+    "name": "KINRO",
+    "location": [51.143167, 5.786833]
+  },
+  {
+    "type": "VFR",
+    "name": "SOUTH",
+    "location": [50.996, 5.299]
+  },
+  {
+    "type": "VFR",
+    "name": "KURIN",
+    "location": [50.943667, 5.2895]
+  },
+  {
+    "type": "VFR",
+    "name": "WEST",
+    "location": [51.123333, 5.195]
+  },
+  {
+    "type": "VFR",
+    "name": "OLMEN",
+    "location": [51.14, 5.139167]
+  },
+  {
+    "type": "line",
+    "name": "",
+    "color": "black",
+    "points": [
+      [51.089221, 5.317768], [51.123333, 5.195], [51.14, 5.139167], [51.238333, 5.187], [51.2415, 5.412167],
+      [51.241560, 5.523781], [51.210497, 5.553347]
+    ]
+  },
+  {
+    "type": "line",
+    "name": "",
+    "color": "black",
+    "points": [[51.089221, 5.317768], [50.996, 5.299], [50.943667, 5.2895]]
+  },
+  {
+    "type": "line",
+    "name": "",
+    "color": "black",
+    "points": [[51.143167, 5.786833], [51.1715, 5.690333], [51.210497, 5.553347]]
+  },
+  {
+    "type": "line",
+    "name": "",
+    "color": "black",
+    "points": [[51.210497, 5.553347], [51.089221, 5.317768]]
+  },
+  {
+    "type": "racetrack2",
+    "name": "",
+    "anchors": [[51.169230, 5.472909], [51.169865, 5.513948]],
+    "course": 231,
+    "direction": "L",
+    "color": "black",
+    "arrow": true
+  },
+  {
+    "type": "racetrack",
+    "name": "",
+    "anchor": [51.163999, 5.463039],
+    "course": 51,
+    "length": 1.23,
+    "separation": 0.95,
+    "direction": "L",
+    "color": "black",
+    "arrow": true
   }
 ]
