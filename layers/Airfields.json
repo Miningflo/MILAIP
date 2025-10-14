@@ -95,6 +95,12 @@
     "color": "purple"
   },
   {
+    "type": "line",
+    "name": "",
+    "color": "purple",
+    "points": [[51.642167, 5.387167],[51.455667, 5.688167]]
+  },
+  {
     "type": "airfield",
     "name": "EHGR",
     "location": [51.567378, 4.931836]
@@ -113,5 +119,30 @@
     "type": "airfield",
     "name": "EHTW",
     "location": [52.272167, 6.886833]
+  },
+  {
+    "type": "airfield",
+    "name": "ETNN",
+    "location": [50.831167, 6.658167]
+  },
+  {
+    "type": "airfield",
+    "name": "ETSB",
+    "location": [50.173833, 7.063333]
+  },
+  {
+    "type": "airfield",
+    "name": "ETAD",
+    "location": [49.9765, 6.6985]
+  },
+  {
+    "type": "airfield",
+    "name": "ETNG",
+    "location": [50.960833, 6.041833]
+  },
+  {
+    "type": "airfield",
+    "name": "ETAR",
+    "location": [49.436167, 7.6065]
   }
 ]

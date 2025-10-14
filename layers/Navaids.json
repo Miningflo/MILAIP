@@ -53,6 +53,31 @@
     "type": "TACAN",
     "name": "WDT\n97X",
     "location": [51.4475, 4.343889]
+  },
+  {
+    "type": "TACAN",
+    "name": "NVO\n109X",
+    "location": [50.822778, 6.636389]
+  },
+  {
+    "type": "TACAN",
+    "name": "BUE\n118X",
+    "location": [50.178611, 7.069444]
+  },
+  {
+    "type": "TACAN",
+    "name": "SPA\n32X",
+    "location": [49.978990, 6.697697]
+  },
+  {
+    "type": "TACAN",
+    "name": "GIX\n18X",
+    "location": [50.963333, 6.045000]
+  },
+  {
+    "type": "TACAN",
+    "name": "RMS\n81X",
+    "location": [49.434700, 7.585650]
   }
 
 ]
